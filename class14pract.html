@@ -1,0 +1,96 @@
+<html>
+<head>
+</head>
+
+<body onload="first()">
+<script>
+function first(){
+	let a = ["a", "b", "c"]; 
+	let b = ["x", "y", "z"]; 
+	let numeric = [...a, 1, 2, 3,...b];
+	console.log(numeric);
+	document.write('is'+numeric);
+	
+	let studentcs=[{
+	Htno:"100719003",
+	Name:"Pat",
+	CGPA:8.5,
+	Rank:5
+},
+{
+Htno:"100719001",
+	Name:"Eric",
+	CGPA:8.3,
+	Rank:7
+},
+{
+Htno:"100719002",
+	Name:"Jessica",
+	CGPA:7.5,
+	Rank:10
+}	
+	
+]
+	
+	/*let studentmaths=[{
+	Htno:"100619003",
+	Name:"Vani",
+	CGPA:9.5,
+	Rank:2
+},
+{
+Htno:"100619001",
+	Name:"Rani",
+	CGPA:9.3,
+	Rank:4
+},
+{
+Htno:"100619002",
+	Name:"Jessica",
+	CGPA:6.5,
+	Rank:10
+}	
+	
+]*/
+
+let studentfstack=[...studentcs,{
+	Htno:"100819003",
+	Name:"John",
+	CGPA:9.8,
+	Rank:1
+}
+
+	
+]
+
+
+
+for(i=0; i<studentfstack.length; i++){
+		document.write('item from array of employees' + JSON.stringify(studentfstack[i]));
+		
+	}
+
+	
+/*for( i=0; i<studentfstack.length; i++){
+		console.log('item from array of employees' + (studentfstack[i]));
+	}
+ let y=studentfstack.forEach((element)=>{
+		console.log(element);
+	})
+console.log(y);
+
+let z= studentfstack.foreach((el)=> {document.write(el.Name)});
+console.log(z);
+*/
+/*let st_details=[...student_cs,...student_maths,...student_Fstack
+console.log('student details:'+st_details);
+document.write('student details:'+...student_Fstack);
+	*/
+	
+	
+	
+
+}
+</script>
+</body>
+</html>
